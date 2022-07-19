@@ -1,0 +1,184 @@
+html, body {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --clr-bg: hsl(0, 0%, 95%);
+    --clr-el: hsl(0, 0%, 46%);
+    --clr-vue: hsl(152.6, 73%, 21.8%);
+    --clr-html: hsl(5, 66.8%, 42.5%);
+    --clr-css: hsl(211.9, 70.2%, 44.7%);
+    --clr-js:hsl(51.7, 63.5%, 31.2%);
+    --clr-sass:hsl(329.7, 51.5%, 45.3%);
+    --clr-react:hsl(212, 100%, 66%);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: var(--clr-bg);
+}
+
+a {
+    text-decoration: none;
+    color: hsl(208.1, 85.3%, 42.7%);
+}
+
+.html5 {
+    color: var(--clr-html);
+}
+
+.css3 {
+    color: var(--clr-css);
+}
+
+.sass {
+    color: var(--clr-sass);
+}
+
+.js {
+    color: var(--clr-js);
+}
+
+.vue {
+    color: var(--clr-vue);
+}
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.fa-solid {
+    margin-right: .25em;
+}
+
+.contact {
+    margin-bottom: 2.5em;
+}
+
+.contact > .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 125px;
+}
+
+.main {
+    margin-bottom: 2em;
+}
+
+.main > .main-title {
+    font-size: 1.25rem;
+    color: var(--clr-el);
+    font-weight: 400;
+    padding-bottom: .25em;
+    border-bottom: 1px solid;
+}
+
+.main-skills_container > div:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.main-skills_list {
+    font-size: .95rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    margin: .25em 0;
+    padding: 0 1.25em;
+}
+
+.main-projects_personalproject:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.main-projects_personalproject > .project-title {
+    margin-bottom: .5em;
+}
+
+.project-title > .project {
+    color: #000;
+}
+
+.main-projects_personalproject > .github_repo {
+    font-size: .95rem;
+}
+
+.main-education_history:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+
+.main-projects_personalproject > .project_stack {
+    font-size: .95rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+
+.main-education_history > .education_history__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.main-education_history > .education_history__specialization {
+    margin-top: .5em;
+    font-weight: 400;
+}
+
+.education_history__title > .date {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--clr-el);
+}
+
+.main-languages_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-languages {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-languages > .language-level {
+    padding-top: .25em;
+    font-style: italic;
+    color: var(--clr-el);
+}
+
+#header {
+    padding-left: .5em;
+}
+
+#header-title {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+#header-sub_title {
+    margin-top: .35em;
+    font-weight: 400;
+    color: var(--clr-el);
+}
+
+@media screen and (min-width: 200px) and (max-width: 625px) {
+    .container {
+        width: initial!important;
+        padding: 1em;
+    }
+}
