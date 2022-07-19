@@ -73,6 +73,11 @@ a {
     height: 125px;
 }
 
+.contact-info_details > .contact-info_anchor:hover,
+.contact-info_details > .contact-info_anchor:focus {
+    color: hsl(208.1, 85.3%, 30.7%);
+}
+
 .main {
     margin-bottom: 2em;
 }
@@ -108,11 +113,21 @@ a {
 }
 
 .project-title > .project {
-    color: #000;
+    color: hsl(0, 0%, 0%);
+}
+
+.project-title > .project:hover,
+.project-title > .project:focus {
+    color: hsl(0, 1%, 14%);
 }
 
 .main-projects_personalproject > .github_repo {
     font-size: .95rem;
+}
+
+.main-projects_personalproject > .github_repo:hover,
+.main-projects_personalproject > .github_repo:focus {
+    color: hsl(208.1, 85.3%, 30.7%);
 }
 
 .main-education_history:not(:last-child) {
